@@ -1,0 +1,341 @@
+body{
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.articles{
+    width: 1100px;
+    margin: 0 auto;
+
+}
+.activities{
+    margin: 0 auto;
+    /* background-color: #f00; */
+    height: 730px;
+    display: flex;
+}
+.activity1{
+    width: 67%;
+    /* background-color: #0f0; */
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.activity2{
+    width: 33%;
+    /* background-color: #00f; */
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.fashion{
+    width: 100%;
+    /* background-color: yellow; */
+    height: 68%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.image{
+    overflow: hidden;
+}
+.design{
+    width: 49%;
+    /* background-color: gray; */
+    height: 33.4%;
+    margin-top: 5px;
+    margin-right: 5px;
+
+}
+.tech{
+    width:49%;
+    /* background-color: cyan; */
+    height: 33.4%;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.lifestyle{
+    width: 100%;
+    /* background-color: yellow; */
+    height: 33.3%;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.sport{
+    width: 100%;
+    /* background-color: gray; */
+    height: 33.3%;
+    margin-top: 5px;margin-bottom: 5px;margin-left: 5px;
+    overflow: hidden;
+}
+.health{
+    width: 100%;
+    /* background-color: cyan; */
+    height: 33.5%;
+    margin-left: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+.activities img{
+    width: 100%;
+    display: block;
+    height: 100%;
+    padding-right: 5px;
+    transition: 1s ease-in-out;
+}
+.activities img:hover{
+    transform: scale(1.2);
+    rotate: -5deg;
+    transition: 1s ease-in-out;
+}
+
+.fashion .act-info{
+    display: block;
+    position: relative;
+    bottom: 60px;
+}
+.fashion .act-info>a{
+    display: block;
+    position: absolute;
+    /* border: 1px solid #f00; */
+    bottom: 130px;
+    left: 40px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff1d78;
+    padding: 4px 6px;
+}
+.fashion .act-info h2 a{
+    display: block;
+    position: absolute;
+    bottom: 70px;
+    text-decoration: none;
+    left: 40px;
+    color: #fff;
+}
+.fashion .act-info h2 a:hover{
+    color: #c72026;
+}
+.fashion .act-info span{
+    display: block;
+    position: absolute;
+    bottom: 35px;
+    left: 40px;
+    color: #fff;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.fashion .act-info span a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-style: italic;
+}
+.fashion .act-info span a:hover{
+    color: #c72026;
+}
+
+
+.design .act-info, .tech .act-info,
+.lifestyle .act-info, .sport .act-info, .health .act-info{
+    display: block;
+    position: relative;
+    bottom: 60px;
+}
+.design .act-info>a, .tech .act-info>a,
+.lifestyle .act-info>a, .sport .act-info>a, .health .act-info>a{ 
+    display: block;
+    position: absolute;
+    /* border: 1px solid #f00; */
+    bottom: 90px;
+    left: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4141ac;
+    padding: 4px 6px;
+}
+.tech .act-info>a{
+    background-color: #c72026;
+}
+.lifestyle .act-info>a{
+    background-color: #2cc025;
+}
+.sport .act-info>a{
+    background-color: #008aff;
+}
+.health .act-info>a{
+    background-color: #690aa0;
+}
+
+.design .act-info h2 a, .tech .act-info h2 a,
+.lifestyle .act-info h2 a, .sport .act-info h2 a, .health .act-info h2 a {
+    display: block;
+    position: absolute;
+    bottom: 35px;
+    text-decoration: none;
+    font-size: 20px;
+    left: 20px;
+    color: #fff;
+}
+.design .act-info h2 a:hover, .tech .act-info h2 a:hover,
+.lifestyle .act-info h2 a:hover, .sport .act-info h2 a:hover, .health .act-info h2 a:hover{
+    color: #c72026;
+}
+.design .act-info span, .tech .act-info span,
+.lifestyle .act-info span, .sport .act-info span, .health .act-info span{
+    display: block;
+    position: absolute;
+    bottom: 17px;
+    left: 20px;
+    color: #fff;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.design .act-info span a, .tech .act-info span a,
+.lifestyle .act-info span a, .sport .act-info span a, .health .act-info span a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-style: italic;
+}
+.design .act-info span a:hover, .tech .act-info span a:hover,
+.lifestyle .act-info span a:hover, .sport .act-info span a:hover, .health .act-info span a:hover{
+    color: #c72026;
+}
+
+
+@media (max-width: 1200px){
+	.articles{
+		width: 90%;
+	}
+}
+@media (min-width:990px) and (max-width:1199px){
+    body{
+        font-size: 10px;
+    }
+    .articles{
+		width: 90%;
+	}
+    .activities{
+        width: 90%;
+        height: 570px;
+
+    }
+    .design {
+    margin-right: 5px;
+    margin-left: -3px;
+    }
+    .lifestyle {
+        height: 33%;
+    }
+    .design .act-info h2 a, .tech .act-info h2 a,
+    .lifestyle .act-info h2 a, .sport .act-info h2 a, .health .act-info h2 a {
+        font-size: 14px;
+    }
+    .fashion .act-info>a {
+        bottom: 110px;
+    }
+    .fashion .act-info span {
+        bottom: 49px;
+    }
+
+   
+}
+
+@media (min-width: 770px) and (max-width:989px){
+    body{
+        font-size: 10px;
+    }
+    .articles{
+		width: 90%;
+	}
+    .activities{
+        width: 90%;
+    }
+    .activity1{
+        width: 50%;
+        height: auto;
+    }
+    .activity2{
+        width: 50%;
+    }
+    .fashion{
+        width: 100%;
+        height: 33.3%;
+    }
+    .design{
+        width: 100%;
+        height: 33.3%;
+        overflow: hidden;
+    }
+    .tech{
+        width: 100%;
+        height: 33.5%;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 5px;
+    }
+    .fashion .act-info {
+        bottom: 45px;
+        left: -20px;
+    }
+    .fashion .act-info h2 a {
+        bottom: 45px;
+    }
+    .fashion .act-info span {
+        bottom: 25px;
+    }
+    .design .act-info h2 a, .tech .act-info h2 a,
+.lifestyle .act-info h2 a, .sport .act-info h2 a, .health .act-info h2 a {
+    font-size: 14px;
+    }
+    .fashion .act-info>a {
+        bottom: 100px;
+    }
+
+}
+
+@media (max-width: 770px){
+    body{
+        font-size: 14px;
+        background-repeat: repeat;
+    }
+    .articles{
+		width: 90%;
+	}
+    .activities{
+        width: 100%;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .activity1{
+        width: 100%;
+        height: auto;
+
+    }
+    .activity2{
+        width: 100%;
+        height: auto;
+        
+    }
+    .fashion,.design, .tech, .lifestyle, 
+    .sport, .health{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .fashion .act-info {
+        bottom: 30px;
+        left: -20px;
+    }
+    .fashion .act-info>a{
+        bottom: 150px;
+    }
+}
